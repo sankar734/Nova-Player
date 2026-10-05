@@ -9,6 +9,9 @@
     "apps/*"
   ],
   "scripts": {
+    "start": "powershell -Command \"Start-Process msedge -ArgumentList '--app=http://localhost:5173', '--window-size=1380,860'\"",
+    "app": "powershell -Command \"Start-Process msedge -ArgumentList '--app=http://localhost:5173', '--window-size=1380,860'\"",
+    "dev": "npm run dev --workspace=@nova/desktop",
     "dev:desktop": "npm run dev --workspace=@nova/desktop",
     "build": "npm run build --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
